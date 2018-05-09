@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="ros_falcon" name="falcon" type="joystick"/>
+    	  <remap from="/falcon/joystick" to="/joy"/>
+
+    <node pkg="teleop_twist_joy" name="translator" type="teleop_node"/>
+    	  <remap from="/cmd_vel" to="/turtle1/cmd_vel"/>
+
+    <node pkg="turtlesim" name="turtlesim" type="turtlesim_node"/>
+
+
+</launch>

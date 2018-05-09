@@ -1,0 +1,11 @@
+<launch>
+
+    <node pkg="turtlesim" name="turtlesim" type="turtlesim_node"/>
+
+    <node pkg="teleop_twist_joy" name="translator" type="teleop_node"/>
+
+    <node pkg="ros_falcon" name="falcon" type="joystick"/>
+
+    <node pkg="wall_warning" name="warning_node" type="hit_wall2"/>	
+
+</launch>

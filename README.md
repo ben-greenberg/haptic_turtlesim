@@ -1,6 +1,8 @@
 # Description
 This package allows ROS to interface with Novint Falcon and expose the device parameters via rostopics.
 
+It has been modified to enable haptic feedback to the Falcon joystick while running the turtlesim node. This package is primary the work of the following people.
+
 ## Author
 Steven Martin:
 
